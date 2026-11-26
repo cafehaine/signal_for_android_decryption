@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "signal_for_android_decryption"
+version = "1.0.0"
+requires-python = ">= 3.7"
+dependencies = ["protobuf", "cryptography"]
+
+description = "An (unofficial) tool which decrypts backup files produced by the Signal Android app."
+readme = "README.md"
+license = "GPL-3.0"
+license-files = ["LICENSE"]
+keywords = ["signal", "android", "backup", "decrypt"]
+
+classifiers = [
+  "Development Status :: 4 - Beta",
+
+  "Intended Audience :: Developers",
+  "Intended Audience :: End Users/Desktop",
+  "Topic :: Communications",
+  "Topic :: File Formats",
+  "Topic :: Security :: Cryptography",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+  "Topic :: System :: Archiving :: Backup",
+  "Topic :: System :: Recovery Tools",
+  "Topic :: Utilities",
+  "Typing :: Typed",
+
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3.14",
+  "Programming Language :: Python :: 3.15",
+]
+
+authors = [
+  { name = "mossblaser" },
+  { name = "lapseofreason" },
+  { name = "Hildegard49" },
+]
+maintainers = [{ name = "mossblaser" }]
+
+[project.urls]
+Homepage = "https://github.com/mossblaser/signal_for_android_decryption"
+Repository = "https://github.com/mossblaser/signal_for_android_decryption.git"
+Issues = "https://github.com/mossblaser/signal_for_android_decryption/issues"
+
+[project.scripts]
+decrypt_backup = "signal_for_android_decryption:main"
